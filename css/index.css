@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
 
+.color {background-color: hsl(25, 97%, 53%);}
+.color {background-color: hsl(0, 0%, 100%);}
+.color {background-color: hsl(217, 12%, 63%);}
+.color {background-color: hsl(216, 12%, 54%);}
+.color {background-color: hsl(213, 19%, 18%);}
+.color {background-color: hsl(216, 12%, 8%);}
+
 /* UNIVERSAL */
 
     * {
@@ -23,12 +30,18 @@
                 justify-content: center;
                 align-content: center;
                 gap: 1rem;
+                background-color: hsl(216, 12%, 8%);
+                color: hsl(0, 0%, 100%);
+            }
+
+            form {
+                background-color: hsl(213, 19%, 18%);
             }
 
         /* CLASS */
 
-            .ratings {
-                display: flex;
+            .form-response {
+                display: none;
             }
 
         /* ID */
@@ -49,5 +62,5 @@
     }
     .attribution a {
         text-decoration: none;
-        color: hsl(228, 45%, 44%);
+        color: hsl(25, 97%, 53%);
     }
