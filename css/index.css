@@ -16,6 +16,10 @@
         font-family: 'Overpass', sans-serif;
     }
 
+    p {
+        font-size: 15px;
+    }
+
 /* MEDIA QUERIES */
 
     @media screen and (min-width: 0px) {
@@ -34,8 +38,87 @@
                 color: hsl(0, 0%, 100%);
             }
 
+            main,
+            form,
+            form div:nth-of-type(1),
+            form div:nth-of-type(2) {
+                display: flex;
+            }
+
+            main,
+            form {
+                flex-direction: column;
+            }
+
+            form div:nth-of-type(1),
+            form div:nth-of-type(2) button {
+                width: 2.8rem;
+                height: 2.8rem
+            }
+
             form {
                 background-color: hsl(213, 19%, 18%);
+                border-radius: 1rem;
+                padding: 1.4rem;
+                gap: 1.4rem;
+            }
+
+            form div:nth-of-type(1) {
+                justify-content: center;
+                border-radius: 100%;
+                background-color: hsl(216, 12%, 24%);
+            }
+
+            form div:nth-of-type(1) img {
+                align-self: center;
+            }
+
+            form h1 {
+                font-size: 1.8rem;
+            }
+
+            form p {
+                width: 94%;
+                line-height: 1.4rem;
+                color: hsl(217, 12%, 63%);
+            }
+
+            form div:nth-of-type(2) {
+                justify-content: space-between;
+            }
+
+            form div:nth-of-type(2) button {
+                border: none;
+                border-radius: 100%;
+                background-color: hsl(216, 12%, 24%);
+                color: hsl(216, 12%, 54%);
+                font-weight: 700;
+            }
+
+            form div:nth-of-type(2) button:hover {
+                background-color: hsl(217, 12%, 63%);
+                color: hsl(0, 0%, 100%);
+            }
+
+            form div:nth-of-type(2) button:active {
+                background-color: hsl(25, 97%, 53%);
+                color: hsl(0, 0%, 100%);
+            }
+
+            form input {
+                border: none;
+                border-radius: 2rem;
+                text-transform: uppercase;
+                letter-spacing: .2rem;
+                font-weight: 700;
+                background-color: hsl(25, 97%, 53%);
+                color: hsl(0, 0%, 100%);
+                padding: .8rem;
+            }
+
+            form input:active {
+                background-color: hsl(0, 0%, 100%);
+                color: hsl(25, 97%, 53%);
             }
 
         /* CLASS */
