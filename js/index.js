@@ -1,14 +1,23 @@
+const form = document.getElementsByTagName('form');
 const inputButtons = document.querySelectorAll('.inputButtons');
 const inputSubmit = document.getElementsByTagName('input');
+const formResponse = document.querySelectorAll('.form-response');
+const span = document.getElementsByTagName('span');
 
-inputSubmit[5].addEventListener('click', () => {
+let inputButtonsLength = inputButtons.length;
 
-    let form = document.getElementsByTagName('form');
-    let formResponse = document.querySelectorAll('.form-response');
-    let span = document.getElementsByTagName('span');
+for (let i = 0; i < inputButtonsLength; i++) {
+    inputButtons[i].addEventListener('click', () => {
+        var selectedValue = inputButtons[i].value;
+        console.log(selectedValue);
 
-    form[0].style.display = 'none';
-    formResponse[0].style.display = 'flex';
-    span[0].textContent = 'texto';
+        inputSubmit[5].addEventListener('click', () => {
 
-});
+            form[0].style.display = 'none';
+            formResponse[0].style.display = 'flex';
+            span[0].textContent = selectedValue;
+
+        });
+
+    })
+}
