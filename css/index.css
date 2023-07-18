@@ -93,6 +93,7 @@
             }
 
             form div:nth-of-type(2) input {
+                cursor: pointer;
                 border: none;
                 border-radius: 100%;
                 background-color: hsl(216, 12%, 24%);
