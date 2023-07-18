@@ -1,5 +1,5 @@
 const inputButtons = document.querySelectorAll('.inputButtons');
-let inputSubmit = document.getElementsByTagName('input');
+const inputSubmit = document.getElementsByTagName('input');
 
 inputSubmit[5].addEventListener('click', () => {
 
