@@ -55,7 +55,7 @@
             }
 
             form div:nth-of-type(1),
-            form div:nth-of-type(2) button {
+            form div:nth-of-type(2) input {
                 width: 2.8rem;
                 height: 2.8rem
             }
@@ -92,7 +92,7 @@
                 justify-content: space-between;
             }
 
-            form div:nth-of-type(2) button {
+            form div:nth-of-type(2) input {
                 border: none;
                 border-radius: 100%;
                 background-color: hsl(216, 12%, 24%);
@@ -100,12 +100,12 @@
                 font-weight: 700;
             }
 
-            form div:nth-of-type(2) button:hover {
+            form div:nth-of-type(2) input:hover {
                 background-color: hsl(217, 12%, 63%);
                 color: hsl(0, 0%, 100%);
             }
 
-            form div:nth-of-type(2) button:focus {
+            form div:nth-of-type(2) input:focus {
                 background-color: hsl(25, 97%, 53%);
                 color: hsl(0, 0%, 100%);
             }
