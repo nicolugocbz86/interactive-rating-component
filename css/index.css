@@ -119,6 +119,7 @@
                 font-weight: 700;
                 background-color: hsl(25, 97%, 53%);
                 color: hsl(0, 0%, 100%);
+                cursor: pointer;
                 padding: .8rem;
             }
 
